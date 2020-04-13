@@ -47,12 +47,13 @@ describe "#multiply" do
     expect(multiply(3, 4)).to eq(12)
   end
 
-  it "multiplies two other numbers"
-    # one other test here, don't forget do end ;)
+  it "multiplies two other numbers" do
+    expect(multiply(10, 10)).to eq(100)
+  end
 
-  it "multiplies two other numbers, one of them being 0"
-    # one last test, with 0 in it
-
+  it "multiplies two other numbers, one of them being 0" do
+    expect(multiply(0, 5)).to eq(0)
+  end
 end
 
 describe "#power" do
